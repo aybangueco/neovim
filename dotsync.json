@@ -1,0 +1,27 @@
+[
+  {
+    "source": ".stylua.toml",
+    "target": "~/.config/nvim",
+    "isDirectory": false
+  },
+  {
+    "source": "README.md",
+    "target": "~/.config/nvim",
+    "isDirectory": false
+  },
+  {
+    "source": "init.lua",
+    "target": "~/.config/nvim",
+    "isDirectory": false
+  },
+  {
+    "source": "lazy-lock.json",
+    "target": "~/.config/nvim",
+    "isDirectory": false
+  },
+  {
+    "source": "lua",
+    "target": "~/.config/nvim",
+    "isDirectory": true
+  }
+]
