@@ -31,6 +31,14 @@ return {
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        javascript = { 'prettierd' },
+        typescript = { 'prettierd' },
+        javascriptreact = { 'prettierd' },
+        typescriptreact = { 'prettierd' },
+        json = { 'prettierd' },
+        html = { 'prettierd' },
+        css = { 'prettierd' },
+        go = { 'gofumpt', 'goimports', 'goimports-reviser' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
@@ -38,5 +46,5 @@ return {
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
       },
     },
-  }
+  },
 }
