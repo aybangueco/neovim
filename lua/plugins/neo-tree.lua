@@ -20,6 +20,24 @@ return {
           ['\\'] = 'close_window',
         },
       },
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        hide_by_name = {
+          'node_modules',
+          '.git',
+        },
+        always_show_by_pattern = {
+          '.env*',
+        },
+        never_show = {
+          '.DS_Store',
+          'thumbs.db',
+        },
+        never_show_by_pattern = {
+          '.null-ls_*',
+        },
+      },
     },
   },
 }
