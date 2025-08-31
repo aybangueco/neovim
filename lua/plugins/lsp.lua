@@ -266,8 +266,11 @@ return {
         'prettierd',
         'goimports',
         'goimports-reviser',
+        'golangci-lint',
+        'hadolint',
         'gofumpt',
         'eslint_d',
+        'markdownlint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
