@@ -38,6 +38,7 @@ return {
         json = { 'prettierd' },
         html = { 'prettierd' },
         css = { 'prettierd' },
+        markdown = { 'prettierd' },
         go = { 'gofumpt', 'goimports', 'goimports-reviser' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
