@@ -4,6 +4,10 @@ return {
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
     main = 'ibl',
-    opts = {},
+    opts = {
+      debounce = 100,
+      indent = { char = '│' },
+      scope = { enabled = false },
+    },
   },
 }
