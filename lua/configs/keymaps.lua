@@ -49,3 +49,11 @@ function _G.set_terminal_keymaps()
 end
 
 vim.cmd 'autocmd! TermOpen term://* lua set_terminal_keymaps()'
+
+-- neotree keymaps
+vim.keymap.set('n', '\\', ':NvimTreeOpen<CR>', { desc = 'Open File Explorer', silent = true })
+vim.keymap.set('n', '|', ':NvimTreeClose<CR>', { desc = 'Close File Explorer', silent = true })
+
+-- autosession keymaps
+vim.keymap.set('n', '<leader>as', ':AutoSession save<CR>', { desc = 'Save Session', silent = true })
+vim.keymap.set('n', '<leader>ar', ':AutoSession restore<CR>', { desc = 'Restore Session', silent = true })
