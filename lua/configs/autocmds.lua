@@ -19,3 +19,14 @@ vim.api.nvim_create_autocmd('ColorScheme', {
     vim.api.nvim_set_hl(0, 'MiniIndentscopePrefix', { fg = vim.fn.synIDattr(vim.fn.hlID 'Comment', 'fg') })
   end,
 })
+
+vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+  pattern = 'NvimTree*',
+  callback = function()
+    local api = require 'nvim-tree.api'
+
+    if not api.tree.is_visible() then
+      api.tree.open()
+    end
+  end,
+})
