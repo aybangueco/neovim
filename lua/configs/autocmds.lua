@@ -12,18 +12,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- Autostart neotree
-vim.api.nvim_create_augroup('neotree', {})
-vim.api.nvim_create_autocmd('UiEnter', {
-  desc = 'Open Neotree automatically',
-  group = 'neotree',
-  callback = function()
-    if vim.fn.argc() == 0 then
-      vim.cmd 'Neotree toggle'
-    end
-  end,
-})
-
 -- Add color scheme on mini.indentscope
 vim.api.nvim_create_autocmd('ColorScheme', {
   callback = function()
