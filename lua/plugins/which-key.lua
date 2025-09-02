@@ -1,4 +1,3 @@
--- Display key bindings
 return {
   {
     'folke/which-key.nvim',
