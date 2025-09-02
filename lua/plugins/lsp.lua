@@ -245,6 +245,7 @@ return {
         gopls = {},
         dockerls = {},
         gh_actions_ls = {},
+        eslint = {},
       }
 
       -- Ensure the servers and tools above are installed
