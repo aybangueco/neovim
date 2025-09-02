@@ -8,5 +8,14 @@ return {
   opts = {
     suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
     -- log_level = 'debug',
+    post_restore_cmds = {
+      function()
+        -- Restore nvim-tree after a session is restored
+        local nvim_tree_api = require 'nvim-tree.api'
+        nvim_tree_api.tree.open()
+        nvim_tree_api.tree.change_root(vim.fn.getcwd())
+        nvim_tree_api.tree.reload()
+      end,
+    },
   },
 }
