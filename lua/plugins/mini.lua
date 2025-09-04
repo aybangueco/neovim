@@ -20,7 +20,7 @@ return {
       -- Add indent scope animation
       require('mini.indentscope').setup {
         symbol = '|',
-        options = { try_as_border = true },
+        options = { draw = { delay = 50 }, try_as_border = true },
       }
 
       -- ... and there is more!
