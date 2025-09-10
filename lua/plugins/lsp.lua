@@ -240,11 +240,12 @@ return {
         cssls = {},
         tailwindcss = {},
         prismals = {},
-        golangci_lint_ls = {},
+        -- golangci_lint_ls = {},
         gopls = {},
         dockerls = {},
         gh_actions_ls = {},
         eslint = {},
+        mdx_analyzer = {},
       }
 
       -- Ensure the servers and tools above are installed

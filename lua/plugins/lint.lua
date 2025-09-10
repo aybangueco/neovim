@@ -9,7 +9,7 @@ return {
         dockerfile = { 'hadolint' },
         javascript = { 'eslint_d' },
         typescript = { 'eslint_d' },
-        go = { 'golangci-lint' },
+        go = { 'golangcilint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
