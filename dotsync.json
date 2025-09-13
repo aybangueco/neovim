@@ -1,15 +1,5 @@
 [
   {
-    "source": ".stylua.toml",
-    "target": "~/.config/nvim",
-    "isDirectory": false
-  },
-  {
-    "source": "README.md",
-    "target": "~/.config/nvim",
-    "isDirectory": false
-  },
-  {
     "source": "init.lua",
     "target": "~/.config/nvim",
     "isDirectory": false
