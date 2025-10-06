@@ -1,0 +1,12 @@
+[
+ {
+  "source": "init.lua",
+  "target": "~/.config/nvim",
+  "isDirectory": false
+ },
+ {
+  "source": "lua",
+  "target": "~/.config/nvim",
+  "isDirectory": true
+ }
+]
